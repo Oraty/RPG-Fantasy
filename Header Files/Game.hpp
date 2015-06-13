@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hp>
 
 sf::Time const TimePerFrame = sf::seconds(1.f / 60.f);
 
