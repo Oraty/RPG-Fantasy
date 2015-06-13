@@ -1,6 +1,6 @@
 #include "Game.hpp"
 
-#include <SFML/Graphics.hp>
+#include <SFML/Graphics.hpp>
 
 Game::Game()
 {
