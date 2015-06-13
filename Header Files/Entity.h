@@ -22,6 +22,7 @@ class Entity : public sf::Drawable, public sf::Transformable
         sf::Vector2f _velocity;
         sf::Vector2f _position;
         sf::String _name;
+        sf::Texture _texture
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
