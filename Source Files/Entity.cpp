@@ -6,6 +6,8 @@ Entity::Entity(std::string const& filename)
 {
 	if (!_texture.loadFromFile(filename))
 		throw std::runtime_error("Unable to load : " + filename);
+
+	_sprite.setTexture(_texture);
 }
 
 sf::Vector2f Entity::getVelocity()
@@ -23,9 +25,9 @@ int Entity::getHealth()
 	return _health;
 }
 
-sf::Texture Entity::getTexture()
+sf::Sprite Entity::getSprite()
 {
-	return _texture;
+	return _sprite;
 }
 
 void Entity::Velocity(sf::Vector2f velocity)
@@ -38,8 +40,7 @@ void Entity::Position(sf::Vector2f position)
     _position = position;
 }
 
-
-void Entity::Health(int health)
+void Entity::health(int health)
 {
 	_health = health;
 }

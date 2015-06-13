@@ -1,8 +1,6 @@
-#ifndef ENTITY_H_INCLUDED
-#define ENTITY_H_INCLUDED
+#pragma once
 
 #include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
 #include <exception>
 #include <string>
 
@@ -22,7 +20,7 @@ class Entity : public sf::Drawable, public sf::Transformable
         /*________Getters________*/
         sf::Vector2f getVelocity();
         sf::Vector2f getPosition();
-		sf::Texture getTexture();
+		sf::Sprite getSprite();
 		int getHealth();
 
         /*________Setters________*/
@@ -31,13 +29,11 @@ class Entity : public sf::Drawable, public sf::Transformable
 		void health(int health);
 
     private:
+		int _health;
         sf::Vector2f _velocity;
         sf::Vector2f _position;
         sf::String _name;
         sf::Texture _texture;
 		sf::Sprite _sprite;
-		int _Health;
-        virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
-
-#endif // ENTITY_H_INCLUDED
