@@ -39,7 +39,7 @@ void Entity::Position(sf::Vector2f position)
 }
 
 
-void Entity::health(int health)
+void Entity::Health(int health)
 {
 	_health = health;
 }
