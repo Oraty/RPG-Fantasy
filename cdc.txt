@@ -1,0 +1,17 @@
+﻿CDC du mini-RPG: RPG-Fantasy
+	
+- Le joueur peut se déplacer 
+
+- Le joueur tous en se déplacant est animé en fonction de la direction de la marche
+
+- Le joueur peut interagir avec des NPC (Non Player Character)
+
+- Le joueur peut avoir des intéractions avec les objets de la map (Colissions, téléportation, évènements) 
+
+- La map est crée avec Tiled
+
+- On utilisera le tilemapping
+
+- Le joueur peut combattre des mobs 
+
+	
