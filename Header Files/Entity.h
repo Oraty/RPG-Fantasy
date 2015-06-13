@@ -2,17 +2,27 @@
 #define ENTITY_H_INCLUDED
 
 #include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
 
-class Entity
+class Entity : public sf::Drawable, public sf::Transformable
 {
 
     public:
-        Entity();
+        Entity(); //ctor
+
+        /*________Getters________*/
+        sf::Vector2f getVelocity();
+        sf::Vector2f getPosition();
+
+        /*________Setters________*/
+        void Velocity(sf::Vector2f velocity);
+        void Position(sf::Vector2f position);
 
     private:
-        vector2f _velocity;
-        vector2f _position;
-        sf::string _name
+        sf::Vector2f _velocity;
+        sf::Vector2f _position;
+        sf::String _name;
+        virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
 #endif // ENTITY_H_INCLUDED
