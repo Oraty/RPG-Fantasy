@@ -18,5 +18,6 @@ class Player : public Entity
 
     private:
         int _damage;
+		sf::Sprite _player;
 
 };

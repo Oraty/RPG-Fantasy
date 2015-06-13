@@ -56,5 +56,6 @@ void Game::update(sf::Time deltaTime)
 void Game::render()
 {
 	_window.clear();
+	_window.draw(player);
 	_window.display();
 }

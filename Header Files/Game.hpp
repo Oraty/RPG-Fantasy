@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "Player.h"
+
 sf::Time const TimePerFrame = sf::seconds(1.f / 60.f);
 
 class Game
@@ -17,4 +19,5 @@ private :
 
 private :
 	sf::RenderWindow _window;
+	Player player;
 };

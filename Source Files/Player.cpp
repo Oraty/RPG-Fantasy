@@ -1,8 +1,10 @@
+#include <SFML/Graphics.hpp>
+
 #include "Player.h"
 
-Player::Player() : Entity("Player.png")
+Player::Player() : Entity("Media/Textures/Player.png")
 {
-
+	_player = getSprite();
 }
 
 int Player::getDamage()
