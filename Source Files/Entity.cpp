@@ -1,8 +1,9 @@
-#include "Header Files/Entity.h"
+#include "Entity.h"
 
-Entity::Entity()
+Entity::Entity(std::string const& filename)
 {
-
+	if (!_texture.loadFromFile(filename))
+		throw std::runtime_error("Unable to load : " + filename);
 }
 
 sf::Vector2f Entity::getVelocity()
@@ -27,6 +28,5 @@ void Entity::Position(sf::Vector2f position)
 
 void Entity::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
-
 }
 

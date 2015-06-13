@@ -4,14 +4,21 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <exception>
+#include <string>
 
-enum Type{Player, PNJ, Mob};
+// We keep them in case
+enum class Type
+{
+	Player,
+	PNJ, 
+	Mob,
+};
 
 class Entity : public sf::Drawable, public sf::Transformable
 {
 
     public:
-        Entity(Type type); //ctor
+        Entity(std::string const& filename); //ctor
 
         /*________Getters________*/
         sf::Vector2f getVelocity();
