@@ -13,7 +13,7 @@ class Entity
     private:
         vector2f _velocity;
         vector2f _position;
-        std::string _name
+        sf::string _name
 };
 
 #endif // ENTITY_H_INCLUDED
