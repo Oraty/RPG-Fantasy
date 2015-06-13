@@ -1,4 +1,4 @@
-﻿CDC du mini-RPG: RPG-Fantas
+﻿CDC du mini-RPG: RPG-Fantasy
 	
 - Le joueur peut se déplacer 
 
