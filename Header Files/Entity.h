@@ -23,10 +23,12 @@ class Entity : public sf::Drawable, public sf::Transformable
         sf::Vector2f getVelocity();
         sf::Vector2f getPosition();
 		sf::Texture getTexture();
+		int getHealth();
 
         /*________Setters________*/
         void Velocity(sf::Vector2f velocity);
         void Position(sf::Vector2f position);
+		void health(int health);
 
     private:
         sf::Vector2f _velocity;
@@ -34,7 +36,7 @@ class Entity : public sf::Drawable, public sf::Transformable
         sf::String _name;
         sf::Texture _texture;
 		sf::Sprite _sprite;
-		int health;
+		int _health;
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 

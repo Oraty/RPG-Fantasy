@@ -18,6 +18,11 @@ sf::Vector2f Entity::getPosition()
     return _position;
 }
 
+int Entity::getHealth()
+{
+	return _health;
+}
+
 sf::Texture Entity::getTexture()
 {
 	return _texture;
@@ -31,6 +36,12 @@ void Entity::Velocity(sf::Vector2f velocity)
 void Entity::Position(sf::Vector2f position)
 {
     _position = position;
+}
+
+
+void Entity::health(int health)
+{
+	_health = health;
 }
 
 void Entity::draw(sf::RenderTarget& target, sf::RenderStates states) const
