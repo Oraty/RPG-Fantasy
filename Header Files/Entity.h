@@ -2,7 +2,6 @@
 #define ENTITY_H_INCLUDED
 
 #include <SFML/Graphics.hpp>
-#include <string>
 
 class Entity
 {
