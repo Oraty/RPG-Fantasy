@@ -6,7 +6,6 @@
 #include <exception>
 #include <string>
 
-// We keep them in case
 enum class Type
 {
 	Player,
