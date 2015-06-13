@@ -1,6 +1,6 @@
-#include "Entity.h"
-
 #include <SFML/Graphics.hpp>
+
+#include "Entity.h"
 
 Entity::Entity(std::string const& filename)
 {
