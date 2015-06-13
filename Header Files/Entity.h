@@ -36,7 +36,7 @@ class Entity : public sf::Drawable, public sf::Transformable
         sf::String _name;
         sf::Texture _texture;
 		sf::Sprite _sprite;
-		int _health;
+		int _Health;
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
