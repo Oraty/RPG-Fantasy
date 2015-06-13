@@ -22,6 +22,7 @@ class Entity : public sf::Drawable, public sf::Transformable
         /*________Getters________*/
         sf::Vector2f getVelocity();
         sf::Vector2f getPosition();
+		sf::Texture getTexture();
 
         /*________Setters________*/
         void Velocity(sf::Vector2f velocity);
@@ -32,6 +33,8 @@ class Entity : public sf::Drawable, public sf::Transformable
         sf::Vector2f _position;
         sf::String _name;
         sf::Texture _texture;
+		sf::Sprite _sprite;
+		int health;
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
