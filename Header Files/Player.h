@@ -3,8 +3,9 @@
 #include <SFML/Graphics.hpp>
 
 #include "Entity.h"
+#include "Animation.hpp"
 
-class Player : public Entity
+class Player : public Entity, public Animation
 {
 
     public:
@@ -19,5 +20,4 @@ class Player : public Entity
     private:
         int _damage;
 		sf::Sprite _player;
-
 };

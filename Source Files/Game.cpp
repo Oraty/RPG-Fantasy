@@ -51,11 +51,14 @@ void Game::processEvents()
 
 void Game::update(sf::Time deltaTime)
 {
+	_temp = player.movement(player.getSprite());
 }
 
 void Game::render()
 {
 	_window.clear();
-	_window.draw(player);
+
+	_window.draw(_temp);
+
 	_window.display();
 }

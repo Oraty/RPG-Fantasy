@@ -1,11 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 #include "Entity.h"
 
 Entity::Entity(std::string const& filename)
 {
 	if (!_texture.loadFromFile(filename))
-		throw std::runtime_error("Unable to load : " + filename);
+		std::cerr << "Unable to load : " << filename << std::endl;
 
 	_sprite.setTexture(_texture);
 }

@@ -20,4 +20,5 @@ private :
 private :
 	sf::RenderWindow _window;
 	Player player;
+	sf::Sprite _temp;
 };
